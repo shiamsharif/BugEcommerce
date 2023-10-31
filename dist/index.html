@@ -61,11 +61,39 @@
         <nav class="bg-gray-800">
             <div class="container flex">
                 <!-- All Category -->
-                <div class="px-8 py-4 bg-primary flex items-center cursor-pointer">
+                <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
                     <span class="text-white">
                         <i class="fas fa-bars"></i>
                     </span>
                     <span class="capitalize ml-2 text-white">All categories</span>
+                    <!-- Dropdown -->
+                    <div class="absolute w-full left-0 top-full bg-white shadow-sm py-3 divide-y divide-gray-300 divide-dashed 
+                    opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-200 transition">
+                            <img class="w-5 h-5 object-contain" src="img/icons/sofa.svg" alt="">
+                            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-200 transition">
+                            <img class="w-5 h-5 object-contain" src="img/icons/bed.svg" alt="">
+                            <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-200 transition">
+                            <img class="w-5 h-5 object-contain" src="img/icons/outdoor-cafe.svg" alt="">
+                            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-200 transition">
+                            <img class="w-5 h-5 object-contain" src="img/icons/sofa.svg" alt="">
+                            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-200 transition">
+                            <img class="w-5 h-5 object-contain" src="img/icons/sofa.svg" alt="">
+                            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                        </a>
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-200 transition">
+                            <img class="w-5 h-5 object-contain" src="img/icons/sofa.svg" alt="">
+                            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                        </a>
+                    </div>
                 </div>
                 <!-- Navbar links --> 
                 <div class="flex items-center justify-between flex-grow pl-12">
@@ -79,7 +107,54 @@
                 </div>
             </div>
         </nav>
-        <!-- Navbar End -->
+        <!-- Navbar  -->
+        <!-- Banner Start -->
+        <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('img/banner-bg.jpg');">
+            <div class="container">
+                <h1 class="text-6xl text-gray-800 font-medium mb-4">
+                    Best Collection For <br>Home Decoration
+                </h1>
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident <br> blanditiis aliquam quia
+                utoluptatem esse.</p>
+                <!-- Button -->
+                <div class="mt-12">
+                    <a href="#" class="bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md 
+                    hover:bg-transparent hover:text-primary transition">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner End -->
+        <!-- Feature Section -->
+        <section class="container py-16">
+            <div class="w-10/12 grid sm:grid-cols-3 grid-cols-1 gap-6 mx-auto justify-center">
+                <!-- One -->
+                <div class="flex justify-center items-center border border-primary rounded-sm px-3 py-6 gap-5">
+                    <img src="img/icons/delivery-van.svg" class="w-12 h-12 object-contain" alt="">
+                    <div>
+                        <h4 class="font-medium text-lg capitalize">Free Shipping</h4>
+                        <p class="text-gray-500 text-sm">order over $199</p>
+                    </div>
+                </div>
+                <!-- Two -->
+                <div class="flex justify-center items-center border border-primary rounded-sm px-3 py-6 gap-5">
+                    <img src="img/icons/money-back.svg" class="w-12 h-12 object-contain" alt="">
+                    <div>
+                        <h4 class="font-medium text-lg capitalize">Money Return</h4>
+                        <p class="text-gray-500 text-sm">30 Days money return</p>
+                    </div>
+                </div>
+                <!-- Three -->
+                <div class="flex justify-center items-center border border-primary rounded-sm px-3 py-6 gap-5">
+                    <img src="img/icons/service-hours.svg" class="w-12 h-12 object-contain" alt="">
+                    <div>
+                        <h4 class="font-medium text-lg capitalize">24/7 Support</h4>
+                        <p class="text-gray-500 text-sm">Customer support</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Feature Section End-->
     </main>
     <!-- Main section End -->
     <!-- Footer section Start -->
